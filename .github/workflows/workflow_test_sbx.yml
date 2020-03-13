@@ -17,6 +17,10 @@ jobs:
         node-version: [10.x, 12.x]
 
     steps:
+    - name: Set Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
     - name: SBX deploy
       uses: socobox/sbx-cli-deploy@master
       with:
