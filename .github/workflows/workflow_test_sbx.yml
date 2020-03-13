@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x, 12.x]
+        node-version: [12.x]
 
     steps:
     - name: Set Node.js 12.x
@@ -24,4 +24,5 @@ jobs:
     - name: SBX deploy
       uses: socobox/sbx-cli-deploy@master
       with:
-        node-version: ${{ matrix.node-version }}
+        username: ${{ secrets.SBX_USERNAME }}
+        password: ${{ secrets.SBX_PASSWORD }}
