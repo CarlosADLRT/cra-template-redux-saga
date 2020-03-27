@@ -29,11 +29,6 @@
 		"typescript": "^3.7.2"
 	},
 	"scripts": {
-		"start:dev": "REACT_APP_ENVIRONMENT=DEV react-scripts start",
-		"start:qa": "PORT=8080 REACT_APP_ENVIRONMENT=QA react-scripts start",
-		"start:prod": "PORT=8080 REACT_APP_ENVIRONMENT=PROD react-scripts start",
-		"build:qa": "REACT_APP_ENVIRONMENT=QA npm run build",
-		"build:prod": "REACT_APP_ENVIRONMENT=PROD npm run build",
 		"test-commit": "react-scripts test --watchAll=false"
 	}
 }
